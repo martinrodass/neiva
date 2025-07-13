@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body{
+    background-color: #f7ece7;
+    padding: 130px 0;
+    background-repeat: repeat;
+    background-size: 60px 60px;
+    background-attachment: fixed;
+}
+header{
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8d2297;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+#logo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(204, 204, 204, 0.582);
+}
+#logo img{
+    width: 100%;
+}  
+h1{
+    font-size: 13px;
+    color: #fff;
+}
+#navLeft{
+    width: 100vw;
+    height: calc(100vh - 90px);
+    background-color: #ebebeb;
+    position: fixed;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    left: -100%;
+}
+#navLeft ul{
+    padding: 20px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#navLeft ul li{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+#navLeft ul li:hover{
+    background-color: #dcdcdc;
+}   
+li a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+}
+#navTop{
+    position: fixed;
+    top: 90px;
+    width: 100vw;
+    height: 40px;
+    background-color: #791c81;
+    display: flex;
+}
+#navTop ul{
+    width: 100%;
+    height: 25px;
+    /* outline: 1px solid #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin-left: 10px;
+    margin-right:10px ;
+    margin-top: 8px;
+}
+#navTop ul li{
+    /* width: 100px; */
+    padding: 0 10px;
+    height: 100%;
+    text-align: center;
+    background-color: #881a92;
+    border-radius: 10px;
+}
+#navTop ul li a{
+    color: #fff;
+    font-size: 12px;
+
+}
+section{
+    padding-bottom:80px ;
+    border-bottom: #acacac solid 1px;
+}
+.containerProductos{
+    width:90vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card{
+    width: calc(100% / 2 - 10px);
+    
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px; */
+    background-color: #f8f3f0;
+    border-radius: 9px;
+    padding: 10px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.1);
+}
+.pelucas img{
+    margin-bottom: 10px;
+    min-height: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+h2{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.card button{
+    width: 100px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 4px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+.card button a{
+    text-decoration: none;
+    color: #000;
+}
+#whatsapp{
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#whatsapp i{
+    color: #fff;
+    font-size: 30px;
+}
+
+#carrito{
+    position: fixed;
+    top: calc(100vh - 95px);
+    /* bottom: -300px; */
+    width: 100vw;
+    border-radius: 19px;
+    background-color: #8d2297;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.fa-cart-shopping{
+    color: #fff;
+    text-align: center;
+}
+#containerNumCarrito{
+    background-color: #642669;
+    display: flex;
+    width: 100px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 5px;
+}
+#numCarrito{
+    color: white;
+    background-color: #c33acf;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+#containerCarrito{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.fa-money-bill-wave{
+    color: #ffffff;
+    text-align: center;
+}
+#comprarCarrito{
+    background-color: #642669;
+    display: flex;
+    width: 150px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 5px;
+}
+#comprarCarrito *{
+    margin: 5px;
+}
+
+#sectionCarrito{
+    margin-top: 100px;
+}
+.itemsViewCarrito{
+    width: 100%;
+}
+
+.containerApartados{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.apartados{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f3f0;
+    border-radius: 9px;
+    padding: 10px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.1);
+}
+.containerApartadosImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apartados img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.apartados a{
+    text-decoration: none;
+    color: #000;
+}
